@@ -78,6 +78,3 @@ def is_valid_username_3(username):
 
 divisor()
 tests(is_valid_username_3)
-
-def is_valid_username_3(username):
-    pass
