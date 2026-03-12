@@ -12,8 +12,9 @@ print(grades)
 
 # dictionary comprehension for grades
 
+grades1 = {name:random.randint(500, 1000)/100 for name in student_names}
 
-
+# print(grades1)
 
 # dictionary with names and letter grades
 letter_grades = list(grade_scale_13_steps.keys())
@@ -41,8 +42,10 @@ def get_letter_grade(score):
 # in a single line with grade and letter
 # exemple:
 # RESET = reset['Reset']
-# RANDOM_COLOR = random.choices(list(regular_colors.values()))
+# RANDOM_COLOR = random.choice(list(regular_colors.values()))
 # AG = grades["Alice"]
 # print("Exemple:")
-# print(f"{RANDOM_COLOR[0]}Alice got a {AG} score with a grade of {get_letter_grade(AG)}{RESET}")
+# print(f"{RANDOM_COLOR}Alice got a {AG} score with a grade of {get_letter_grade(AG)}{RESET}")
 
+for key, value in grades.items():
+    print(f"For {key} that has a score of {value}  and that's {get_letter_grade(value)}.")

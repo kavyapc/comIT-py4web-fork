@@ -16,7 +16,7 @@ for idx, element in enumerate(strings):
 # split the strings by ", to get the the full name (" has to be escaped)
 
 # elements, middle one full name
-triple_list = string0.split("\"")
+triple_list = string0.split('"')
 
 # we can split first and last elements by commas, and we will get undesireble elements:
 # the last and the first respectively
