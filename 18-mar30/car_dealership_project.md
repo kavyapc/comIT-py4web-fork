@@ -56,7 +56,7 @@ This is your OOP warm-up. You'll design a `Car` class that represents a single v
 
 **Task 1.1 — Define the class and constructor**
 
-> 💡 **Hint:** In Python, a class constructor is the `__init__` method. All the attributes above should become instance variables using `self.`
+> 💡 **Hint:** In Python, a class constructor is the `__init__` method. All the attributes above should become instance variables using `self.`. The id parameter should have a default value of None since new cars won't have a database ID yet.
 
 ```python
 # car.py
