@@ -84,7 +84,7 @@ def home(request):
     content= """
             <h1>Welcome to my Page</h1>
             <h2>Visit around</h2>
-            <p>Enjoy the contents</p>
+            <p>Enjoy the content</p>
     """
     
     return HttpResponse(nav + content + home_body)
