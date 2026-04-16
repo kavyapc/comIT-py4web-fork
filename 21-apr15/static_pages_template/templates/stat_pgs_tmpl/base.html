@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My cool website with templates {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'stat_pgs_tmpl/css/daisyui@5.css'%}" type="text/css">
+    <script src="{% static 'stat_pgs_tmpl/js/tailwindcss@4.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'stat_pgs_tmpl/css/themes.css'%}" type="text/css">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+            
+                <a class="btn btn-ghost text-xl" href="/">Home</a>
+                <a class="btn btn-ghost text-xl" href="/contact/">Contact</a>
+            
+        </div>
+
+        
+    </header>
+    <h1 class="text-4xl font-bold text-primary">{% block h1 %}My H1{% endblock %}</h1>
+    <h2 class="text-2xl font-semibold text-neutral">{% block h2 %}MY H2{% endblock %}</h2>
+    <p class="py-4 text-base-content">{%block p %}MY PARAGRAPH {% endblock %}</p>
+    <main>
+        {% block main %}MY MAIN CONTENT{% endblock %}
+    </main>
+
+</body>
+</html>
